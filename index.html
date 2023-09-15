@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Environment Control</title>
+  <meta http-equiv="refresh" content="15">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1c1b22;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .sensor-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      color: #04b304;
+      padding: 10px;
+      margin: 30px auto;
+      border-radius: 5px;
+      max-width: 800px;
+    }
+
+    .sensor-data span {
+      margin: 0 20px;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Environment Control</h1>
+  </header>
+
+  <div class="sensor-data">
+    <span>co2 max value co2lappm</span>
+    <span>co2 AccXppm</span>
+    <span>temp AccYc</span>
+    <span>humidity AccZ%</span>
+    <span>humidity target lala%</span>
+  </div>
+
+  <form action="/submit" method="post">
+    <div class="buttons-container">
+      <button class="button" name="co2_action" value="1">Lower co2 max value</button>
+      <button class="button" name="co2_action" value="2">Raise co2 max value</button>
+      <button class="button" name="humidity_action" value="8">Lower Humidity Target</button>
+      <button class="button" name="humidity_action" value="9">Raise Humidity Target</button>
+    </div>
+  </form>
+      
+    </div>
+  </form>
+
+
+  <footer>
+    <p>electronjarv</p>
+  </footer>
+</body>
+</html>
