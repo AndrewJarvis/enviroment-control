@@ -216,8 +216,8 @@ def data():
             continue
         try:
             if co2target<=co2_ppm: # automatically raise and lower co2 max value based on if c02 maxes out before reaching target maybe in a given time rate
-                if autoraise==0:write to file
-                    co2target=co2_ppm # may need to 
+                if autoraise==0:
+                    co2target=co2_ppm # may need to write to file
                 onoff=random.randint(0,1)
                 ultra_son.value(onoff)
                 fan.value(1)
